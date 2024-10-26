@@ -86,7 +86,7 @@ async function changeWorkplace(id, companyname, location, startdate, enddate, ti
 //deletes a workplace
 async function deleteWorkplace(id) {
     let url = "http://127.0.0.1:3000/workplaces/" + id;
-    console.log(url);
+
     const response = await fetch(url, {
         method: "DELETE",
         headers: {
